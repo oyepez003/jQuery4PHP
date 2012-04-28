@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<assets-config>
+	<assets>
+		<asset id="jquery">
+      <script type="text/javascript" src="jquery4php-assets/js/jquery.js"></script>
+		</asset>
+		<asset id="jquery-ui">
+			<script type="text/javascript" src="jquery4php-assets/js/jquery.ui.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/themes/aristo/jquery.ui.css" />
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/jquery.ui.utilities.css" />
+		</asset>
+    <asset id="wijmo">
+			<script type="text/javascript" src="jquery4php-assets/js/jquery.wijmo.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/wijmo/jquery.wijmo.css" />
+		</asset>
+		<asset id="jLayout">
+			  <script type="text/javascript" src="jquery4php-assets/js/plugins/jLayout/jlayout.border.js"></script>
+			  <script type="text/javascript" src="jquery4php-assets/js/plugins/jLayout/jlayout.flexgrid.js"></script>
+			  <script type="text/javascript" src="jquery4php-assets/js/plugins/jLayout/jlayout.flow.js"></script>
+			  <script type="text/javascript" src="jquery4php-assets/js/plugins/jLayout/jlayout.grid.js"></script>
+			  <script type="text/javascript" src="jquery4php-assets/js/plugins/jLayout/jquery.jlayout.js"></script>
+			  <script type="text/javascript" src="jquery4php-assets/js/plugins/jquery.sizes.js"></script>
+			  <script type="text/javascript" src="jquery4php-assets/js/plugins/jquery.metadata.js"></script>
+		</asset>
+		<asset id="pnotify">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/pnotify/jquery.pnotify.js"></script>
+			<link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/pnotify/jquery.pnotify.default.css" />
+		</asset>
+		<asset id="jqgrid">
+      <script type="text/javascript" src="jquery4php-assets/js/plugins/jqgrid/i18n/grid.locale-en.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/plugins/jqgrid/jquery.jqGrid.min.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/plugins/jquery.tablednd.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/jqgrid/ui.jqgrid.css" />
+		</asset>
+    <asset id="jqplot">
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/jquery.jqplot.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/jqplot/jquery.jqplot.min.css" />
+      <!-- JQPLOT PLUGINS ONLY INCLUDE IF NECESSARY-->
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.barRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.logAxisRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.blockRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.enhancedLegendRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.bubbleRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.funnelRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.donutRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.mekkoRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.mekkoAxisRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.meterGaugeRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.ohlcRenderer.min.js"></script>
+      <!--script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.highlighter.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.BezierCurveRenderer.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.cursor.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.dragable.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.pointLabels.min.js"></script>
+      <script language="javascript" type="text/javascript" src="jquery4php-assets/js/plugins/jqplot/plugins/jqplot.trendline.min.js"></script-->
+      <!-- JQPLOT PLUGINS -->
+		</asset>
+    <asset id="blockUI">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/malsup/jquery.blockUI.js"></script>
+		</asset>
+    <asset id="jqForm">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/malsup/jquery.form.js"></script>
+		</asset>
+    <asset id="jqValidate">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/bassistance/validate/jquery.validate.js"></script>
+		</asset>
+    <asset id="jqMask">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/meio/jquery.meio.mask.js"></script>
+		</asset>
+    <asset id="relatedSelects">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/ehynds/jquery.relatedselects.js"></script>
+		</asset>
+    <asset id="jquery-ui-addons">
+			<script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.dialog.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.timepicker.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.daterangepicker.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.scrollabletab.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.selectmenu.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.multiselect.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.multiselect.filter.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.picklist.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/ui/addons/jquery.ui.dynamicselect.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/ui-addons/jquery.ui.daterangepicker.css" />
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/ui-addons/jquery.ui.selectmenu.css" />
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/ui-addons/jquery.ui.multiselect.css" />
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/ui-addons/jquery.ui.multiselect.filter.css" />
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/ui-addons/jquery.ui.picklist.css" />
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/ui-addons/jquery.ui.dynamicselect.css" />
+    </asset>
+    <asset id="scrollTo">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/jquery.scrollTo.js"></script>
+    </asset>
+    <asset id="localisation">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/jquery.localisation.js"></script>
+    </asset>
+    <asset id="keys">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/keys/jquery.hotkeys.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/plugins/keys/jquery.keystrokes.js"></script>
+    </asset>
+    <asset id="formwizard">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/wizard/jquery.form.wizard.js"></script>
+    </asset>
+    <asset id="bbq">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/jquery.bbq.js"></script>
+    </asset>
+    <asset id="jqFileManager">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/elfinder/jquery.elfinder.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/elrte/css/jquery.elfinder.css" />
+    </asset>
+    <asset id="jqEditor">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/elrte/jquery.elrte.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/elrte/css/jquery.elrte.css" />
+    </asset>
+    <asset id="jqTree">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/jstree/jquery.jstree.js"></script>
+    </asset>
+    <asset id="jqFullCalendar">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/fullcalendar/jquery.fullcalendar.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/fullcalendar/jquery.fullcalendar.css" />
+    </asset>
+    <asset id="jqColorpicker">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/colorpicker/jquery.colorpicker.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/colorpicker/css/jquery.colorpicker.css" />
+    </asset>
+    <asset id="jqRing">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/roundabout/jquery.roundabout.min.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/plugins/roundabout/jquery.roundabout-shapes.min.js"></script>
+    </asset>
+    <asset id="easing">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/jquery.easing.js"></script>
+    </asset>
+    <asset id="jqCycle">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/malsup/jquery.cycle.all.js"></script>
+    </asset>
+    <asset id="jqBox">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/fancybox/jquery.fancybox.pack.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/plugins/fancybox/jquery.fancybox-buttons.js"></script>
+      <script type="text/javascript" src="jquery4php-assets/js/plugins/fancybox/jquery.fancybox-thumbs.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/fancybox/jquery.fancybox.css" />
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/fancybox/jquery.fancybox-buttons.css" />
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/fancybox/jquery.fancybox-thumbs.css" />
+    </asset>
+    <asset id="jqIdleTimer">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/monitor/jquery.idleTimer.js"></script>
+    </asset>
+    <asset id="jqBooklet">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/booklet/jquery.booklet.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/booklet/jquery.booklet.css" />
+    </asset>
+    <asset id="jqKeypad">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/keypad/jquery.keypad.pack.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/keypad/jquery.keypad.css" />
+    </asset>
+    <asset id="jqCalculator">
+			<script type="text/javascript" src="jquery4php-assets/js/plugins/calculator/jquery.calculator.pack.js"></script>
+      <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/calculator/jquery.calculator.css" />
+    </asset>
+	</assets>
+	<packages>
+		<package name="*" import="jquery,scrollTo,localisation,jquery-ui,jquery-ui-addons,wijmo,jqgrid,pnotify,jLayout,jqplot,blockUI,jqForm,jqValidate,jqMask,relatedSelects,keys,bbq,formwizard,fileManager,jqFileManager,jqEditor,jqTree,jqFullCalendar,jqColorpicker,easing,jqRing,jqCycle,jqBox,jqIdleTimer,jqBooklet,jqKeypad,jqCalculator" />
+		<package name="jquery" import="jquery" />
+		<package name="jquery-ui" import="jquery,jquery-ui,jquery-ui-addons" />
+		<package name="jqgrid" import="jquery,jquery-ui,jqgrid" />
+		<package name="pnotify" import="pnotify" />
+		<package name="jLayout" import="jLayout" />
+    <package name="jquery-ui-only" import="jquery-ui" />
+		<package name="jqgrid-only" import="jqgrid" />
+    <package name="jqplot-only" import="jqplot" />
+    <package name="blockUI" import="blockUI" />
+    <package name="jqForm" import="jqForm" />
+    <package name="jqValidate" import="jqValidate" />
+    <package name="jqMask" import="jqMask" />
+    <package name="relatedSelects" import="relatedSelects" />
+    <package name="scrollTo" import="scrollTo" />
+    <package name="localisation" import="localisation" />
+    <package name="keys" import="keys" />
+    <package name="formwizard" import="bbq,jqForm,jqValidate,formwizard" />
+    <package name="jqFileManager" import="jqFileManager" />
+    <package name="jqKeypad" import="jqKeypad" />
+	</packages>
+</assets-config>
