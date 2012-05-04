@@ -283,11 +283,12 @@ class YsUIButton extends YsUICore {
    * @return YsHTML HTML tags
    */
   public static function initButton($widgetId, $htmlProperties = null,$type = 'button', $value = null){
-    if($type === 'icon'){
+    if($type === 'icon' || $type === 'link'){
+      $tag = ($type === 'icon') ? YsHTML::BUTTON : YsHTML::A;
       $template  = sprintf('%s%s%s'
-                     ,self::initWidget($widgetId, $htmlProperties, YsHTML::BUTTON)
+                     ,self::initWidget($widgetId, $htmlProperties, $tag)
                      ,self::initWidget($value)
-                     ,self::endWidget(YsHTML::BUTTON)
+                     ,self::endWidget($tag)
                    );
     }else{
       $template  = self::initWidget($widgetId, $htmlProperties);

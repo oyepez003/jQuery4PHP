@@ -451,4 +451,9 @@ class YsJQBox extends YsJQueryPlugin {
     return $jquery;
   }
   
+  public function _withButtons($config = array()){
+    $this->_helpers(array('buttons' => $config));
+    return $this;
+  }
+  
 }

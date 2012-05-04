@@ -130,7 +130,7 @@ class YsBlockUI extends YsJQueryPlugin {
    * @param type $options
    * @return YsBlockUI
    */
-  public static function blockElement($jQuerySelector, $options = null){
+  public static function blockElement($jQuerySelector = null, $options = null){
     return self::build($jQuerySelector, $options);
   }
 
@@ -189,5 +189,9 @@ class YsBlockUI extends YsJQueryPlugin {
     }
     return $jqueryDynamic;
   }
-
+  
+  public function _content($jQuerySelector){
+    $this->_message(YsJQuery::newInstance()->in($jQuerySelector));
+    return $this;
+  }
 }

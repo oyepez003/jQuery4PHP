@@ -113,7 +113,16 @@ class YsJQColorPicker extends YsJQueryPlugin {
     return $this;
   }
   
-  public function returnAllValuesIn($hex, $h, $s, $b, $r, $g, $b2){
+  public function returnAllValuesIn($hex, $h = '', $s = '', $b = '', $r = '', $g= '', $b2= ''){
+    if(is_array($hex)){
+      $h = isset($hex['hue']) ? $hex['hue'] : "";
+      $s = isset($hex['saturation']) ? $hex['saturation'] : "";
+      $b = isset($hex['brightness']) ? $hex['brightness'] : "";
+      $r = isset($hex['red']) ? $hex['red'] : "";
+      $g = isset($hex['green']) ? $hex['green'] : "";
+      $b2 = isset($hex['blue']) ? $hex['blue'] : "";
+      $hex = isset($hex['hexadecimal']) ? $hex['hexadecimal'] : "";
+    }
     $jquery = $this->configureReturnValues($this,$hex, $h, $s, $b, $r, $g, $b2);
     return $this;
   }
