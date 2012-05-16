@@ -79,6 +79,7 @@ class YsKeys extends YsJQueryPlugin {
   
   public function _keys($keys){
     $args = func_get_args();
+    $args = (isset($args[0]) && is_array($args[0])) ? $args[0] : $args;
     $this->addOption('keys', new YsArgument($args));
     return $this;
   }

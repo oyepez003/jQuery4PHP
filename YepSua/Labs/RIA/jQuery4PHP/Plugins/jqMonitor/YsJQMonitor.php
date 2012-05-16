@@ -88,7 +88,7 @@ class YsJQMonitor extends YsJQueryPlugin {
     return $jquery;
   }
   
-  public static function timeout($jQuerySelector = YsJQueryConstant::DOCUMENT){
+  public static function __timeout($jQuerySelector = YsJQueryConstant::DOCUMENT){
     $jquery = self::build();
     $jquery->addArgumentsBeforeOptions('timeout');
     return $jquery;

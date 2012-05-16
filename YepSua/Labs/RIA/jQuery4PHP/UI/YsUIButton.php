@@ -269,7 +269,7 @@ class YsUIButton extends YsUICore {
    * @return YsHTML HTML tags
    */
   public static function endWidget($htmlTag = YsHTML::INPUT){
-    if($htmlTag === YsHTML::BUTTON){
+    if($htmlTag === YsHTML::BUTTON || $htmlTag === YsHTML::A){
       return YsHTML::getTagClosed($htmlTag);
     }else{
       return null;
@@ -285,9 +285,10 @@ class YsUIButton extends YsUICore {
   public static function initButton($widgetId, $htmlProperties = null,$type = 'button', $value = null){
     if($type === 'icon' || $type === 'link'){
       $tag = ($type === 'icon') ? YsHTML::BUTTON : YsHTML::A;
+      $value = ($value === null || $value === '') ? YsHTML::NBSP : $value;
       $template  = sprintf('%s%s%s'
                      ,self::initWidget($widgetId, $htmlProperties, $tag)
-                     ,self::initWidget($value)
+                     ,$value
                      ,self::endWidget($tag)
                    );
     }else{

@@ -192,11 +192,13 @@ class YsJQCalculator extends YsJQueryPlugin {
   
   public function _customLayout($args){
     $layouts = func_get_args();
+    $layouts = (is_array($layouts[0])) ? $layouts[0] : $layouts;
     return $this->_layout($layouts);
   }
   
   public function _customLayoutVars($args){
     $layouts = func_get_args();
+    $layouts = (is_array($layouts[0])) ? $layouts[0] : $layouts;
     $layoutVars = array();
     $i=0;
     foreach($layouts as $layout){
