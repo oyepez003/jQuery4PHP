@@ -153,6 +153,25 @@ class YsFormWizard extends YsJQueryPlugin {
   
   //TEMPLATES
   
+  // BASIC TEMPLATES
+  /**
+   * Starts the standar HTML tags for build this widget
+   * @param string $id The widget id
+   * @param string $htmlProperties custom HTML properties like 'style="display:none"'
+   * @return YsHTML HTML tags
+   */
+  public static function initWidget($id, $htmlProperties = null, $tag = YsHTML::DIV){
+    return self::initWizard($id , $htmlProperties);
+  }
+
+  /**
+   * Ends the standar HTML tags for build this widget
+   * @return YsHTML HTML tags
+   */
+  public static function endWidget($tag = YsHTML::DIV){
+    return self::endWizard();
+  }
+  
   public static function initWizard($id,$htmlProperties = null){
     return YsHTML::getTag(YsHTML::FORM, sprintf('id="%s" %s ', $id , $htmlProperties));
   }

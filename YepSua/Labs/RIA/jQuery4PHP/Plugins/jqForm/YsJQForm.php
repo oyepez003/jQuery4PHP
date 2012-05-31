@@ -159,5 +159,24 @@ class YsJQForm extends YsJQueryPlugin {
     }
     return $jquery;
   }
+  
+  // BASIC TEMPLATES
+  /**
+   * Starts the standar HTML tags for build this widget
+   * @param string $id The widget id
+   * @param string $htmlProperties custom HTML properties like 'style="display:none"'
+   * @return YsHTML HTML tags
+   */
+  public static function initWidget($id, $htmlProperties = null, $tag = YsHTML::FORM){
+    return YsHTML::getTag($tag, sprintf('id="%s" %s ', $id , $htmlProperties));
+  }
+
+  /**
+   * Ends the standar HTML tags for build this widget
+   * @return YsHTML HTML tags
+   */
+  public static function endWidget($tag = YsHTML::FORM){
+    return YsHTML::getTagClosed($tag);
+  }
 
 }
