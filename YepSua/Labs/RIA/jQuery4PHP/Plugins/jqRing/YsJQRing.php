@@ -148,5 +148,23 @@ class YsJQRing extends YsJQueryPlugin {
   public static function shapeGoodbyeCruelWorld($jQuerySelector){
     return self::initWithShape($jQuerySelector,self::$SHAPE_GOODBYE_CRUEL_WORLD);
   }
-    
+  
+  // BASIC TEMPLATES
+  /**
+   * Starts the standar HTML tags for build this widget
+   * @param string $id The widget id
+   * @param string $htmlProperties custom HTML properties like 'style="display:none"'
+   * @return YsHTML HTML tags
+   */
+  public static function initWidget($id, $htmlProperties = null, $tag = YsHTML::UL){
+    return parent::initWidget($id , $htmlProperties,$tag);
+  }
+
+  /**
+   * Ends the standar HTML tags for build this widget
+   * @return YsHTML HTML tags
+   */
+  public static function endWidget($tag = YsHTML::UL){
+    return parent::endWidget();
+  }
 }
