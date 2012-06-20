@@ -539,10 +539,10 @@ class YsPlot extends YsComponent{
     return $jqPlot;
   }
 
-  public function getJQuerySelector() {
+  public function getJQuerySelector($suffix = '#') {
     $template = $this->jquerySelector;
     if (!isset($this->jquerySelector) || $this->jquerySelector === null) {
-      $template = sprintf('%s%s', '#', $this->getPlotId());
+      $template = sprintf('%s%s', $suffix, $this->getPlotId());
     }
     return $template;
   }

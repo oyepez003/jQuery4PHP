@@ -1,0 +1,20 @@
+{
+    "name": "oyepez003/jQuery4PHP",
+    "type": "library",
+    "description": "Makes easy writing javascript code (jQuery syntax) using PHP objects",
+    "keywords": ["jQuery","PHP","jQueryUI","jQuery plugins","jQuery4PHP"],
+    "homepage": "http://jquery4php.sourceforge.net/",
+    "license": ["GPL","MIT"],
+    "authors": [
+        {
+            "name": "Omar Yepez",
+            "email": "omar.yepez@yepsua.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.*"
+    },
+    "autoload": {
+        "files": ["YepSua/Labs/RIA/jQuery4PHP/jquery4php_required.php"]
+    }
+}
