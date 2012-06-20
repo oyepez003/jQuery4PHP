@@ -12,9 +12,9 @@
         }
     ],
     "require": {
-        "php": ">=5.2.*"
+        "php": ">=5.2.4"
     },
     "autoload": {
         "files": ["YepSua/Labs/RIA/jQuery4PHP/jquery4php_required.php"]
     }
-} 
+}
