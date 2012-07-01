@@ -190,6 +190,26 @@ class YsJQuery extends YsJQueryCore
   public function getJQueryObject(){
     return $this->jquery;
   }
+  
+  public function addPreSintax($pre_sintax, $withSeparator = true){
+    return $this->jquery->addPreSintax($pre_sintax, $withSeparator);
+  }
+
+  public function addPostSintax($post_sintax, $withSeparator = true){
+    return $this->jquery->addPostSintax($post_sintax, $withSeparator);
+  }
+
+  public function addSintax($sintax){
+    return $this->jquery->addSintax($sintax);
+  }
+  
+  public function setPreSintax($pre_sintax){
+    return $this->jquery->setPreSintax($pre_sintax);
+  }
+
+  public function setPostSintax($post_sintax){
+    return $this->jquery->setPostSintax($post_sintax);
+  }
 
   /**
    * Magic

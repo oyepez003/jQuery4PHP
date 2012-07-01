@@ -339,6 +339,7 @@ class YsJQueryBuilder {
       $separator = (isset($this->preSintax)) ? YsJsFunction::JAVASCRIPT_SINTAX_SEPARATOR : '';
       $pre_sintax = ($withSeparator === true) ? $pre_sintax . $separator :  $pre_sintax;
       $this->setPreSintax($pre_sintax . $this->getPreSintax());
+      return $this;
     }
 
     public function addPostSintax($post_sintax, $withSeparator = true){
