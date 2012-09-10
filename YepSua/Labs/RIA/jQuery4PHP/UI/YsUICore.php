@@ -17,7 +17,7 @@
  */
 class YsUICore extends YsJQueryPlugin {
 
-  const JQUERY_UI_VERSION = "Stable (1.8.16: jQuery 1.3.2+)";
+  const JQUERY_UI_VERSION = "Stable (1.8.23: jQuery 1.3.2+)";
   public static $uiEvent;
 
   public function registerOptions(){}

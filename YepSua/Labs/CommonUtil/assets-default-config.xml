@@ -9,6 +9,9 @@
       <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/themes/aristo/jquery.ui.css" />
       <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/jquery.ui.utilities.css" />
 		</asset>
+    <asset id="jquery-ui-touch">
+			<script type="text/javascript" src="jquery4php-assets/js/jquery.ui.touch.js"></script>
+		</asset>
     <asset id="wijmo">
 			<script type="text/javascript" src="jquery4php-assets/js/jquery.wijmo.min.js"></script>
       <link rel="stylesheet" type="text/css" href="jquery4php-assets/styles/wijmo/jquery.wijmo.css" />
@@ -164,7 +167,7 @@
     </asset>
 	</assets>
 	<packages>
-		<package name="*" import="jquery,scrollTo,localisation,jquery-ui,jquery-ui-addons,wijmo,jqgrid,pnotify,jLayout,jqplot,blockUI,jqForm,jqValidate,jqMask,relatedSelects,keys,bbq,formwizard,fileManager,jqFileManager,jqEditor,jqTree,jqFullCalendar,jqColorpicker,easing,jqRing,jqCycle,jqBox,jqIdleTimer,jqBooklet,jqKeypad,jqCalculator" />
+		<package name="*" import="jquery,scrollTo,localisation,jquery-ui,jquery-ui-touch,jquery-ui-addons,wijmo,jqgrid,pnotify,jLayout,jqplot,blockUI,jqForm,jqValidate,jqMask,relatedSelects,keys,bbq,formwizard,fileManager,jqFileManager,jqEditor,jqTree,jqFullCalendar,jqColorpicker,easing,jqRing,jqCycle,jqBox,jqIdleTimer,jqBooklet,jqKeypad,jqCalculator" />
 		<package name="jquery" import="jquery" />
 		<package name="jquery-ui" import="jquery,jquery-ui,jquery-ui-addons" />
 		<package name="jqgrid" import="jquery,jquery-ui,jqgrid" />
