@@ -55,6 +55,8 @@ class YsUIConstant extends YsJQueryConstant{
   const  EXPAND_METHOD = 'expand';
   const  HIDE_METHOD = 'hide';
   const  SHOW_METHOD = 'show';
+  const  PLAY_METHOD = 'play';
+  const  PAUSE_METHOD = 'pause';
 
   //WIDGETS Delete 'wij' for use the jqueryUI default features and disable the Wijmo support
   const DIALOG_WIDGET = 'wijdialog';
@@ -80,6 +82,7 @@ class YsUIConstant extends YsJQueryConstant{
   const SPLITTER_WIDGET = 'wijsplitter';  // -> Wijmo is required
   const EXPANDER_WIDGET = 'wijexpander';  // -> Wijmo is required
   const DYNAMICSELECT_WIDGET = 'dynamicselect';
+  const VIDEO_WIDGET = 'wijvideo';
   
   //UTILITY
   const POSITION_UTILITY = 'position';

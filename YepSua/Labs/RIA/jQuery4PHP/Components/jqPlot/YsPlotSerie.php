@@ -59,6 +59,8 @@ class YsPlotSerie extends YsComponentOption{
 
   private $yaxisOptions;
   private $xaxisOptions;
+  
+  private $linePattern;
 
   public function __construct($label = null, $color = null) {
     if($label !== null){
@@ -597,5 +599,12 @@ class YsPlotSerie extends YsComponentOption{
       $this->addData($value);
     }
   }
+  
+  public function getLinePattern() {
+    return $this->linePattern;
+  }
 
+  public function setLinePattern($linePattern) {
+    $this->linePattern = $linePattern;
+  }
 }

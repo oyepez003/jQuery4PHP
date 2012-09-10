@@ -226,5 +226,6 @@ class YsJQueryConstant{
   const PLUGIN_JQBOOKLET  = 'jqBooklet';
   const PLUGIN_JQKEYPAD  = 'jqKeypad';
   const PLUGIN_JQCALCULATOR  = 'jqCalculator';
+  const PLUGIN_JQUPLOAD  = 'jqUpload';
   
 }

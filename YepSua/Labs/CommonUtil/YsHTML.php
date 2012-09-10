@@ -44,6 +44,7 @@ class YsHTML extends YsTag{
   const TD = 'td';
   const TBODY = 'tbody';
   const TFOOTER = 'tfooter';
+  const VIDEO = 'video';
   
   public static function appendInPropeties($propertie,$appendValues,$propeties){
     $propertie = sprintf('%s="',$propertie);

@@ -83,6 +83,9 @@ class YsPlot extends YsComponent{
   private $errorFontSize;
   private $enablePlugins;
   private $themeEngine;
+  
+  private $animate;
+  private $animateReplot;
 
   /**
    *
@@ -784,4 +787,35 @@ class YsPlot extends YsComponent{
     return $this->getPlotGlobalVarName();
   }
   
+  public function getAxisOptions() {
+    return $this->axisOptions;
+  }
+
+  public function setAxisOptions($axisOptions) {
+    $this->axisOptions = $axisOptions;
+  }
+
+  public function getThemeEngine() {
+    return $this->themeEngine;
+  }
+
+  public function setThemeEngine($themeEngine) {
+    $this->themeEngine = $themeEngine;
+  }
+
+  public function getAnimate() {
+    return $this->animate;
+  }
+
+  public function setAnimate($animate) {
+    $this->animate = $animate;
+  }
+
+  public function getAnimateReplot() {
+    return $this->animateReplot;
+  }
+
+  public function setAnimateReplot($animateReplot) {
+    $this->animateReplot = $animateReplot;
+  }  
 }

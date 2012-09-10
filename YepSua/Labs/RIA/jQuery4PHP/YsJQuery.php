@@ -247,7 +247,7 @@ class YsJQuery extends YsJQueryCore
   
   public static function remoteCommand($proccess = null, $update = null, $success = ''){
     if($proccess !== null){
-      $proccessSintax = YsJQuery::serialize()->in($proccess);
+      $proccessSintax = YsJQuery::serializeArray()->in($proccess);
     }
     if($update !== null){
       $updateSintax = YsJsFunction::newInstance(

@@ -18,9 +18,9 @@
  
 class YsJQueryBuilder {
     
-    const VERSION = "v1.6.0";
+    const VERSION = "v1.7.0";
     const STATUS = 'Stable';
-    const JQUERY_VERSION = 'v1.7.1';
+    const JQUERY_VERSION = 'v1.8.2';
 
     public static $jqueryVar = 'jQuery';
     static protected $instance   = null;
