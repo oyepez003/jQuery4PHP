@@ -49,6 +49,9 @@ class YsJsSintax {
     $errorSintax = array(".()",";;",",}",",]","{;",",,");
     $realSintax = array("",";","}","]","{", ",");
     $sintax = str_replace($errorSintax, $realSintax, $sintax);
+    $errorSintax = array("[\n|\r|\n\r]");
+    $realSintax = array(' ');
+    $sintax = preg_replace($errorSintax, $realSintax, $sintax);
     return $sintax;
   }
 

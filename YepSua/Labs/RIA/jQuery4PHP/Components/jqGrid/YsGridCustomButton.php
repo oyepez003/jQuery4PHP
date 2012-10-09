@@ -28,7 +28,11 @@ class YsGridCustomButton {
   private $sepcontent;
 
   private $isSeparator;
-
+  
+  public function __construct() {
+    $this->setCaption('');
+  }
+  
   private function varsToUnset(){
     return array( 'isSeparator');
   }
