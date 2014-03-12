@@ -684,4 +684,11 @@ class YsGridField extends ArrayObject implements ArrayAccess{
     $this->setCellAttr(self::configureCellAttributes($attrs));
   }
   
+  public function offsetSet ($offset, $value){
+    $this->$offset = $value;
+  }
+    
+  public function offsetGet ($offset){
+    return $this->$offset;
+  }     
 }

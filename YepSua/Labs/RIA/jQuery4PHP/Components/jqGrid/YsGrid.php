@@ -1928,6 +1928,19 @@ class YsGrid extends YsComponent{
   public function addGridField(YsGridField $gridFields) {
     $this->gridFields->append($gridFields);
   }
+  
+  /**
+   * 
+   * @param string $index
+   * @return YsGridField
+   */
+  public function getGridField($index){
+    foreach ($this->getGridFields() as $field) {
+      if($field->getIndex() === $index){
+        return $field;
+      }
+    }
+  }
 
   public function addGridFields() {
     $args = func_get_args();
