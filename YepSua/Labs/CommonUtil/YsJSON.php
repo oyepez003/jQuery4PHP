@@ -47,7 +47,7 @@ class YsJSON{
     $value = ($value instanceof ArrayObject) ? $value->getArrayCopy() : $value;
     $pattern = ($key === null) ? ' "%s",' :$key . ': "%s",';
     if(!is_null($value)){
-      if(is_numeric($value)){
+      if(is_numeric($value) && gettype($value) !== "string"){
         $pattern = ($key === null) ? " %s," :$key . ": %s,";
         $pattern = sprintf($pattern, $value);
         return $pattern;
