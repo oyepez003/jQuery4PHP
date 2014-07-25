@@ -245,19 +245,12 @@ class YsJQuery extends YsJQueryCore
     return $this;
   }
   
-  public static function remoteCommand($proccess = null, $update = null, $success = ''){
+  public static function remoteCommand($proccess = null, $update = null, $preUpdate = '', $postUpdate = ''){
     if($proccess !== null){
       $proccessSintax = YsJQuery::serializeArray()->in($proccess);
     }
     if($update !== null){
-      $updateSintax = YsJsFunction::newInstance(
-        new YsJQueryDynamic(
-          $success,
-          YsJQuery::html(YsArgument::value('data'))->in($update),
-          YsJQuery::val(YsArgument::value('data'))->in($update)
-        ),
-        'data, textStatus, jqXHR'
-      );
+      $updateSintax = self::ajaxUpdateSintax($update, $preUpdate, $postUpdate);
     }
     $jquery = self::ajax();
     $jquery->_type('POST');
@@ -268,6 +261,18 @@ class YsJQuery extends YsJQueryCore
       $jquery->_success($updateSintax);
     }
     return $jquery;
+  }
+  
+  public static function ajaxUpdateSintax($update = null, $preSintax = '', $postSintax = ''){
+    return YsJsFunction::newInstance(
+      new YsJQueryDynamic(
+        $preSintax,
+        YsJQuery::html(YsArgument::value('data'))->in($update),
+        YsJQuery::val(YsArgument::value('data'))->in($update),
+        $postSintax
+      ),
+      'data, textStatus, jqXHR'
+    );
   }
   
   public static function ajaxStatus($selector
