@@ -293,9 +293,9 @@ class YsUIButton extends YsUICore {
                    );
     }else{
       $template  = self::initWidget($widgetId, $htmlProperties);
-      $template .= ($type=='button') 
-                 ? ''
-                 : YsHTML::getTag(YsHTML::LABEL, sprintf(' for="%s" ',$widgetId),$value);
+      /*$template .= ($type==='button')
+                 ? YsHTML::getTag(YsHTML::LABEL, sprintf(' for="%s" ',$widgetId),$value)
+                 : '';*/
     }
     return $template;
   }
