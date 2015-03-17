@@ -262,8 +262,8 @@ EOF;
     $sintax= <<<EOF
     function(date, allDay, jsEvent, view){
       $('#%SCHEDULE%-event-title').val('');           
-      %SCHEDULE_START_VAR%.datepicker('setDate',date)
-      %SCHEDULE_END_VAR%.datepicker('setDate',date)
+      %SCHEDULE_START_VAR%.datepicker('setDate',date);
+      %SCHEDULE_END_VAR%.datepicker('setDate',date);
       $('#%SCHEDULE%-event-all-day').attr('checked',allDay);
       $('#%SCHEDULE%-event-editable').attr('checked',true);
       $('#%SCHEDULE%-event-url').val('');
@@ -320,8 +320,8 @@ EOF;
     $sintax= <<<EOF
 function(event, jsEvent, view){
   $('#%SCHEDULE%-event-title').val(event.title);           
-  %SCHEDULE_START_VAR%.datepicker('setDate',event.start)
-  %SCHEDULE_END_VAR%.datepicker('setDate',event.end)
+  %SCHEDULE_START_VAR%.datepicker('setDate',event.start);
+  %SCHEDULE_END_VAR%.datepicker('setDate',event.end);
   $('#%SCHEDULE%-event-all-day').attr('checked',event.allDay);
   $('#%SCHEDULE%-event-editable').attr('checked',event.editable);
   $('#%SCHEDULE%-event-url').val(event.url);
@@ -330,7 +330,7 @@ function(event, jsEvent, view){
   $('#%SCHEDULE%-event-bg-color').val((event.backgroundColor != undefined) ? event.backgroundColor.replace(/#/gi, '') : '');
   $('#%SCHEDULE%-event-border-color').val((event.borderColor != undefined) ? event.borderColor.replace(/#/gi, '') : '');
   $('#%SCHEDULE%-event-text-color').val((event.textColor != undefined) ? event.textColor.replace(/#/gi, '') : '');      
-  $('#%SCHEDULE%-event-id').val(event.id)
+  $('#%SCHEDULE%-event-id').val(event.id);
   %SCHEDULE_DIALOG_VAR%.%SCHEDULE_DIALOG_EVENT%('option','title','%EDIT_EVENT_LABEL%');
   var varEvent = event;
   %SCHEDULE_DIALOG_VAR%.%SCHEDULE_DIALOG_EVENT%('option','buttons',{
@@ -412,8 +412,8 @@ EOF;
       $('#%SCHEDULE%-event-startDate').val(event.start);
       $('#%SCHEDULE%-event-endDate').val(event.end);
       $('#%SCHEDULE%-event-action').val('update');
-      %SCHEDULE_START_VAR%.datepicker('setDate',event.start)
-      %SCHEDULE_END_VAR%.datepicker('setDate',event.end)
+      %SCHEDULE_START_VAR%.datepicker('setDate',event.start);
+      %SCHEDULE_END_VAR%.datepicker('setDate',event.end);
       %SCHEDULE_VAR%.event = event;
       %SCHEDULE_VAR%.clientAction = 'update';
       $('#%SCHEDULE%Form').submit();

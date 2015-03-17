@@ -1089,7 +1089,10 @@ class YsGrid extends YsComponent{
    * @param array() $rowList
    */
   public function setRowList($rowList) {
-    $this->rowList = $rowList;
+    if(is_array($rowList) && !empty($rowList)){
+      $this->rowList = $rowList;
+      $this->setRowNum($rowList[0]);
+    }
   }
 
   public function getRowNumbers() {
